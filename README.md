@@ -11,7 +11,7 @@ Shortcodes to add [tabler icons](https://tabler-icons.io) to your [Eleventy](htt
 Install the package:
 
 ```sh
-npm i -D @cdransf/eleventy-plugin-tablericons
+npm i -D @cdransf/eleventy-plugin-tabler-icons
 ```
 
 Then add the plugin to your `.eleventy.js` file:
@@ -19,7 +19,7 @@ Then add the plugin to your `.eleventy.js` file:
 ```js
 // .eleventy.js
 module.exports = eleventyConfig => {
-    eleventyConfig.addPlugin(require('@cdransf/eleventy-plugin-tablericons'));
+    eleventyConfig.addPlugin(require('@cdransf/eleventy-plugin-tabler-icons'));
 }
 ```
 
@@ -40,7 +40,7 @@ Args: `name: string`, `alt?: string`
 
 ## Configuration
 
-`eleventy-plugin-tablericons` offers a few options on a configuration object passed to Eleventy's `addPlugin()`:
+`@cdransf/eleventy-plugin-tabler-icons` offers a few options on a configuration object passed to Eleventy's `addPlugin()`:
 
 - `className?: string` Adds a class to all tabler icons
 - `errorOnMissing: boolean` (default: `false`) Throw an error when passed an invalid style/name or invalid attribute
@@ -50,7 +50,7 @@ Pass the configuration object when adding the plugin:
 ```js
 // .eleventy.js
 module.exports = eleventyConfig => {
-    eleventyConfig.addPlugin(require('@cdransf/eleventy-plugin-tablericons'), {
+    eleventyConfig.addPlugin(require('@cdransf/eleventy-plugin-tabler-icons'), {
         className: 'icon',
         errorOnMissing: true
     });

@@ -1,6 +1,6 @@
 {
-  "name": "@cdransf/eleventy-plugin-tablericons",
-  "version": "1.0.1",
+  "name": "@cdransf/eleventy-plugin-tabler-icons",
+  "version": "1.0.0",
   "description": "Shortcodes to add Tabler icons to your Eleventy projects",
   "main": "tablericons.js",
   "files": [
